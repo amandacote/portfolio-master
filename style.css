@@ -1,0 +1,358 @@
+* 
+{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgb(148, 165, 189);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 35px;
+  height:15vh;
+
+ 
+}
+
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(255, 255, 255);
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    
+}
+
+
+/* NAVBAR CSS */
+nav{
+    
+    padding-left:4em;
+    padding-right: 4em;
+    /* TODO: figure out no longer staying fixed */
+    position:absolute;
+    width: 100%;
+    top:0;
+    left:0;
+  }
+
+  a {
+    text-decoration: none;
+ }
+ 
+  nav ul {
+    margin:0;
+    padding:0;
+    display:flex;
+  }
+  nav li{
+    padding: 1em 0;
+    list-style-type: none;
+    padding: 25px;
+    font-size: 1.7em;
+  }
+  
+  
+  
+ 
+
+  /* HEADER CSS */
+.header {
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200vh;
+    background-color: antiquewhite;
+}
+
+
+.welcome{
+    margin-top: 25vh;
+    text-align: center;
+    font-weight: 500;
+    font-size:2.5em;
+    color: rgb(201, 183, 206)}
+
+#changingword {
+    color:rgb(255, 255, 255);
+      } 
+
+/* IMAGE GALLERY CSS */
+.image-gallery {
+    background-color: rgb(201, 183, 206);;
+    color: white;
+    height: 200vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr minmax(px, 1fr)  minmax(350px, 1fr) minmax(350px, 1fr) 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    padding-top: 100px;
+    grid-template-areas:
+    ". a b c ."
+    ". d e f ."
+    ;
+}
+
+<div id="outer" style="position:absolute;width:100px;height:100px;border:1px solid black; overflow:hidden;">
+      <div id="inner">
+        
+ 
+    </div>
+
+.box-styling {
+    height: 100%;
+    width: 100%;
+    background-color: cadetblue
+}
+
+.box1 {
+    grid-area: a;
+}
+
+.box2 {
+    grid-area: b;
+}
+
+.box3 {
+    grid-area: c;
+}
+
+.box4 {
+    grid-area: d;
+}
+
+.box5 {
+    grid-area: e;
+}
+
+.box6 {
+    grid-area: f;
+}
+
+.bigText {
+    font-size: 2em;
+    padding-right: .5ch;
+}
+
+
+/* ABOUT ME CSS*/
+.about-me {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    height: 165vh !important;
+    background-color: rgb(148, 165, 189) !important;
+    padding: 20vh 50px 0 50px;
+    column-count: 2;
+    font-size: 2em;
+    text-align: center;
+}
+
+
+/* CONTACT CSS */
+.contact {
+    display: grid;
+    color: white;
+    justify-items: center;
+    align-items: center;
+    height: 25vh !important;
+    padding-bottom: 50vh;
+    background-color: rgb(201, 183, 206);!important;
+    grid-template-columns: 3fr minmax(2fr, 1fr) minmax(2fr, 1fr) 3fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    ". title title ."
+    ". logo wrapper ."
+    ;
+}
+
+.contact-title {
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    grid-area: title;
+    padding-bottom: 50px;
+}
+
+.logo-svg {
+    width: 400px;
+    grid-area: logo;
+}
+
+.contact-wrapper {
+    grid-area: wrapper;
+}
+
+
+   /* footer section */
+   footer{
+    grid-area:footer;
+  }
+  footer p{
+    font-size:3em;
+  }
+  footer li {
+    display:inline;
+  }
+  footer ul {
+    max-width: 640px;
+    margin: 2em auto;
+    padding:0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+  }
+  footer ul li{
+    list-style: none;
+    align-self:flex-end;
+  }
+  footer ul li a {
+    text-decoration:none;
+    color: black;
+    opacity:.6;
+    transition: .3s;
+  }
+  footer ul li a:hover {
+    text-decoration:none;
+    color:white;
+  }
+  footer svg {
+    width:20%;
+  }
+  footer p{
+    font-size: 1em;
+  }
+
+
+
+  /* MEDIA QUERY FOR SMALL SCREENS */
+ @media (max-width:1100px){
+    .image-gallery {
+        margin-bottom: 800px;
+        grid-template-columns: 1fr minmax(350px, 1fr) minmax(350px, 1fr) 1fr;
+        grid-template-areas:
+        ". a b ."
+        ". c d ."
+        ". e f ."
+        ;
+    }
+ }
+
+/* MEDIA QUERY FOR MOBILE */
+ @media (max-width:735px){
+     nav {
+         padding-left: 0;
+     }
+
+    .image-gallery {
+        padding-bottom: 200%;
+        grid-template-columns: 1fr minmax(400px, 1fr) 1fr;
+        grid-template-areas:
+        ".a."
+        ".b."
+        ".c."
+        ".d."
+        ".e."
+        ".f."
+        ;
+    }
+
+    .contact {
+        padding-bottom: 200%;
+        grid-template-columns: 3fr minmax(2fr, 1fr) 3fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        ". title ."
+        ". logo ."
+        ". wrapper ."
+        ;
+    }
+    
+ }
+
+ .hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.hovereffect img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+.hovereffect:hover img {
+  filter:blur(3px);
+  -webkit-filter: blur(3px);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hovereffect h2 {
+  /* text-transform: uppercase; */
+  text-align: center;
+  position: relative;
+  font-size: 1em;
+  padding: 10px;
+  font-family: 'Work Sans', sans-serif;
+  /* color:#FFA100; */
+}
+
+.hovereffect p {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  margin: 0;
+  background-color: transparent;
+}
+
+
+
+
+
+
